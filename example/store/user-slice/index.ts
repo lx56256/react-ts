@@ -8,7 +8,6 @@ export const fetchLoginUser = createAsyncThunk('user/loginInfo', async (params: 
     const result = await loginUser(params);
     return result
   } catch (error) {
-    console.log('error1111', error);
     return error;
   }
 })
